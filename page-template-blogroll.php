@@ -3,7 +3,7 @@
 Template Name: 友情链接
 */
 ?>
-<?php get_header(); ?>
+<?php get_header();?>
 <div class="mdl-grid site-width">
   <div id="primary" class="mdl-cell mdl-cell--12-col">
     <div id="content" class="mdl-grid">
@@ -27,7 +27,7 @@ Template Name: 友情链接
       <article id="p<?php the_ID();?>" <?php post_class('mdl-card mdl-cell mdl-cell--12-col mdl-shadow--2dp expanded');?>>
         <?php alnico_thumb();?>
         <div class="mdl-card__content">
-          <?php the_content(); ?>
+          <?php the_content();?>
         </div>
       </article>
       <?php
@@ -53,4 +53,4 @@ Template Name: 友情链接
 
   </div>
 </div>
-<?php get_footer(); ?>
+<?php get_footer();?>

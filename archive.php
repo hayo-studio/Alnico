@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header();?>
 <div class="mdl-grid site-width">
   <div id="primary" class="lv mdl-cell mdl-cell--12-col">
     <div id="content">
@@ -15,17 +15,17 @@
 
     <?php if ( have_posts() ) : ?>
 
-      <?php while ( have_posts() ) : the_post(); ?>
-        <?php get_template_part( 'card', get_post_format() ); ?>
-      <?php endwhile; ?>
+      <?php while ( have_posts() ) : the_post();?>
+        <?php get_template_part( 'card', get_post_format() );?>
+      <?php endwhile;?>
 
-      <?php alnico_page_nav(); ?>
+      <?php alnico_page_nav();?>
 
     <?php else : ?>
-      <?php //get_template_part( 'content', 'none' ); ?>
-    <?php endif; ?>
+      <?php //get_template_part( 'content', 'none' );?>
+    <?php endif;?>
 
     </div>
   </div>
 </div>
-<?php get_footer(); ?>
+<?php get_footer();?>

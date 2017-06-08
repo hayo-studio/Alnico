@@ -6,7 +6,7 @@
   </div>
   <footer class="mdl-mini-footer">
     <div class="mdl-mini-footer__left-section">
-      <div class="mdl-logo"><span class="site-title"><?php bloginfo('name'); ?></span> &copy; 2017</div>
+      <div class="mdl-logo"><span class="site-title"><?php bloginfo('name');?></span> &copy; 2017</div>
       <?php
       if ( has_nav_menu( 'footer' ) )
       wp_nav_menu( array(

@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header();?>
 <div class="mdl-grid site-width">
   <div id="primary" class="lv mdl-cell mdl-cell--12-col">
     <div id="content">
@@ -6,7 +6,7 @@
     if ( have_posts() ) {
 
       while ( have_posts() ) {
-          the_post();
+        the_post();
         get_template_part( 'card', get_post_format() );
       }
 
@@ -20,4 +20,4 @@
     </div>
   </div>
 </div>
-<?php get_footer(); ?>
+<?php get_footer();?>
