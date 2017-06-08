@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes();?>>
 <head>
-  <meta charset="<?php bloginfo( 'charset' ); ?>">
+  <meta charset="<?php bloginfo( 'charset' );?>">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="分享游戏相关资源与心得，记录点点滴滴的进步。">
   <meta name="keywords" content="HAYO,HAYO Studio,Minecraft,我的世界,汉化组,翻译组,本地化">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <?php wp_head(); ?>
-  <link rel="shortcut icon" href="<?php echo esc_url( home_url( '/favicon.png' ) ); ?>" />
+  <?php wp_head();?>
+  <link rel="shortcut icon" href="<?php echo esc_url( home_url( '/favicon.png' ) );?>" />
 </head>
 <body <?php body_class('mdl-color--grey-100 mdl-color-text--grey-700 mdl-base')?>>
 <div id="page" class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
   <header id="masthead" class="mdl-layout__header mdl-shadow--3dp">
     <div class="mdl-layout__header-row">
-      <a class="mdl-layout-title" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-        <span class="site-title mdl-color-text--primary-contrast"><?php bloginfo( 'name' ); ?></span>
-        <span class="lg-only site-description mdl-color-text--primary-contrast"><?php bloginfo( 'description' ); ?></span>
+      <a class="mdl-layout-title" href="<?php echo esc_url( home_url( '/' ) );?>">
+        <span class="site-title mdl-color-text--primary-contrast"><?php bloginfo( 'name' );?></span>
+        <span class="lg-only site-description mdl-color-text--primary-contrast"><?php bloginfo( 'description' );?></span>
       </a>
       <div class="mdl-layout-spacer"></div>
       <div id="for-search" class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right" role="search">
@@ -37,7 +37,7 @@
     </div>
   </header>
   <aside class="mdl-layout__drawer">
-    <span class="mdl-layout-title"><?php bloginfo( 'name' ); ?></span>
+    <span class="mdl-layout-title"><?php bloginfo( 'name' );?></span>
     <nav class="mdl-navigation" role="navigation">
       <a class="mdl-navigation__link" href><?php _e('主页', 'alnico')?></a>
       <?php

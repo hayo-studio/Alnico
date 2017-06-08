@@ -95,7 +95,7 @@ function alnico_custom_background() {
   }
 ?>
 <style id="custom-background-css">
-#main { <?php echo trim( $style ); ?> }
+#main { <?php echo trim( $style );?> }
 <?php
 if ( alnico__t( 'transparent_card' ) ) :?>
 .lv .mdl-card { background: rgba( 255, 255, 255, .5); }
@@ -128,7 +128,7 @@ function alnico_list_comments($comment, $args, $depth) {
     case 'pingback'  :
     case 'trackback' :
       ?>
-      <li <?php comment_class('mdl-list__item'); ?> id="comment-<?php comment_ID(); ?>">
+      <li <?php comment_class('mdl-list__item');?> id="comment-<?php comment_ID();?>">
         <p>
           <?php
           _e( 'Pingback: ', 'alnico' );
@@ -147,10 +147,10 @@ function alnico_list_comments($comment, $args, $depth) {
     default :
       global $post;
       ?>
-      <li <?php comment_class('mdl-list__item'); ?> id="comment-<?php comment_ID(); ?>">
+      <li <?php comment_class('mdl-list__item');?> id="comment-<?php comment_ID();?>">
         <div>
           <div class="commenter-info">
-            <?php echo get_avatar( $comment, 40 ); ?>
+            <?php echo get_avatar( $comment, 40 );?>
           </div>
           <div class="commenter-info">
             <div>
@@ -205,13 +205,13 @@ function alnico_thumb() {
       </div>
       <div class="mdl-card__title">
         <h1 class="mdl-card__title-text t">
-          <?php the_title(); ?>
+          <?php the_title();?>
         </h1>
       </div>
     </div>
   <?php else: ?>
     <div class="mdl-card__title">
-      <h1 class="t"><?php the_title(); ?></h1>
+      <h1 class="t"><?php the_title();?></h1>
     </div>
   <?php endif;
 }

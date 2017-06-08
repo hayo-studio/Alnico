@@ -28,7 +28,7 @@
   );
   comment_form($args);
   ?>
-  <?php endif; ?>
+  <?php endif;?>
 
   <?php if ( have_comments() ) : ?>
 
@@ -50,16 +50,16 @@
     <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) :?>
       <nav id="comment-nav">
         <div class="prev">
-          <?php previous_comments_link( '<button class="mdl-button mdl-js-button mdl-js-ripple-effect"><i class="material-icons">arrow_back</i> '.__('之前的评论', 'alnico').'</button>'); ?>
+          <?php previous_comments_link( '<button class="mdl-button mdl-js-button mdl-js-ripple-effect"><i class="material-icons">arrow_back</i> '.__('之前的评论', 'alnico').'</button>');?>
         </div>
         <div class="mdl-layout-spacer"></div>
         <div class="next">
             <?php next_comments_link( '<button class="mdl-button mdl-js-button mdl-js-ripple-effect">'. __('之后的评论', 'alnico').' <i class="material-icons">arrow_forward</i></button>' );?>
         </div>
       </nav>
-      <?php endif; ?>
+      <?php endif;?>
     
-  <?php endif; ?>
+  <?php endif;?>
 
 </div>
-<?php endif; ?>
+<?php endif;?>

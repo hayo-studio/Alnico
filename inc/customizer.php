@@ -185,7 +185,7 @@ function alnico_customize_header_output() {
 
 ?>
 
-  <style><?php alnico_customize_generate_css('.site-width', 'max-width', 'site_width'); ?></style>
+  <style><?php alnico_customize_generate_css('.site-width', 'max-width', 'site_width');?></style>
   <meta name="theme-color" content="#<?php echo get_theme_mod('primary_color', '607d8b');?>">
   <script>
     <?php
@@ -232,7 +232,7 @@ function alnico_customize_header_output() {
     }(this,document,localStorage)
   </script>
   <meta name="mobile-web-app-capable" content="yes">
-  <meta name="mobile-web-app-title" content="<?php bloginfo( 'name' ); ?>">
+  <meta name="mobile-web-app-title" content="<?php bloginfo( 'name' );?>">
   <?php
   $mdl_css = alnico__t('mdl_custom_css');
   if ( is_customize_preview() ) {
