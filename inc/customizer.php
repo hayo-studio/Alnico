@@ -23,8 +23,29 @@ function alnico_customize_register($wp_customize) {
     'capability' => 'edit_theme_options',
     'description' => __('Alnico 主题的主要选项。', 'alnico'),
   ) );
-    $wp_customize->add_setting( 'mdl_custom_css', array(
-    'default' => '',
+  $wp_customize->add_setting( 'meta_description', array(
+    'type' => 'theme_mod',
+    'transport' => 'postMessage',
+  ) );
+  $wp_customize->add_control( 'meta_description', array(
+    'type' => 'text',
+    'priority' => 1,
+    'section' => 'alnico_options',
+    'label' => 'Meta 介绍',
+    'description' => '影响了被爬虫抓取的情况。'
+  ) );
+  $wp_customize->add_setting( 'meta_keywords', array(
+    'type' => 'theme_mod',
+    'transport' => 'postMessage',
+  ) );
+  $wp_customize->add_control( 'meta_keywords', array(
+    'type' => 'text',
+    'priority' => 1,
+    'section' => 'alnico_options',
+    'label' => 'Meta 关键词',
+    'description' => '影响了被爬虫抓取的情况。'
+  ) );
+  $wp_customize->add_setting( 'mdl_custom_css', array(
     'type' => 'theme_mod',
     'transport' => 'postMessage',
     'sanitize_callback' => 'esc_url_raw'

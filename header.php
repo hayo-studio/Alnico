@@ -3,8 +3,8 @@
 <head>
   <meta charset="<?php bloginfo( 'charset' );?>">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="分享游戏相关资源与心得，记录点点滴滴的进步。">
-  <meta name="keywords" content="HAYO,HAYO Studio,Minecraft,我的世界,汉化组,翻译组,本地化">
+  <meta name="description" content="<?php alnico__t('meta_description', true);?>">
+  <meta name="keywords" content="<?php alnico__t('meta_keywords', true);?>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <?php wp_head();?>
   <link rel="shortcut icon" href="<?php echo esc_url( home_url( '/favicon.png' ) );?>" />
