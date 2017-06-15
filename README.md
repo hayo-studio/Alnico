@@ -4,13 +4,13 @@ Alnico is an eloquent material design style WordPress theme based on material de
 
 [Demo][1] [中文][2]
 
-Author: Snownee
-Contributors: SettingDust, Troy
-Tags: one-column, fixed-layout, fluid-layout, custom-colors, flexible-header, sticky-post, editor-style, threaded-comments
-Requires at least: WordPress 4.7
-Tested up to: WordPress 4.8
-Version: 1.0.0
-License: [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) © Snownee
+ * Author: Snownee
+ * Contributors: SettingDust, Troy
+ * Tags: one-column, fixed-layout, fluid-layout, custom-colors, flexible-header, sticky-post, editor-style, threaded-comments
+ * Requires at least: WordPress 4.7
+ * Tested up to: WordPress 4.8
+ * Version: 1.0.0
+ * License: [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) © Snownee
 
 ## Features
  * Fully material designed
