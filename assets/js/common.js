@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
 
-  var i = 'expanded', o = 'aria-'+i;
+  var q = 'expanded', o = 'aria-'+q;
   history.replaceState({title: $('title').text(), pos: a.pos, id: id},'');
 
   $('.lv article>a').click(function(e) {
@@ -9,7 +9,7 @@ jQuery(document).ready(function($) {
     s.top = $(window).scrollTop();
     history.replaceState(s,'');
     //如果未展开，之后要做收起按钮
-    if (!p.hasClass(i)) {
+    if (!p.hasClass(q)) {
       e.preventDefault();
 
     if( !p.attr('data-pid') ) {
@@ -33,7 +33,7 @@ jQuery(document).ready(function($) {
       loadComments(p,i)
     }
     $('#p'+i).delay(500).show(0, function() {
-      $('#p'+i).attr(o, 'true').addClass(i);
+      $('#p'+i).attr(o, 'true').addClass(q);
       $('#primary').removeClass('lv');
     } ).delay(500).show(0, function() {
       $('#t'+i+'>.mdl-button__ripple-container').hide();
@@ -128,11 +128,11 @@ jQuery(document).ready(function($) {
         $('#primary').addClass('lv').delay(500).show( function() {
           scrollTo(s.top)
         });
-        $('article').attr(o, 'false').removeClass('fadeout '+i).slideDown(500);
+        $('article').attr(o, 'false').removeClass('fadeout '+q).slideDown(500);
       } else if (s.pos == 'post') {
         loadComments($('#p'+s.id),s.id);
         $('article:not(#p'+s.id+')').addClass('fadeout').delay(500).show(0, function() {
-          $('#p'+s.id).attr(o, 'true').addClass(i);
+          $('#p'+s.id).attr(o, 'true').addClass(q);
           $('#primary').removeClass('lv');
         } ).slideUp(500, function() {
           $('#t'+s.id+'>.mdl-button__ripple-container,#page-nav').hide(scrollTo);

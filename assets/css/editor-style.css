@@ -10,6 +10,9 @@ margin-right: auto;
 display: block;
 margin-left: auto;
 }
+#tinymce {
+font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
 #tinymce a {
 text-decoration:none;
 padding: 2px;

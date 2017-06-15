@@ -39,6 +39,33 @@ display:none;
 display:none;
 }
 }
+.screen-reader-text {
+clip: rect(1px, 1px, 1px, 1px);
+position: absolute !important;
+height: 1px;
+width: 1px;
+overflow: hidden;
+}
+
+.screen-reader-text:focus {
+background-color: #f1f1f1;
+border-radius: 3px;
+box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+clip: auto !important;
+color: #21759b;
+display: block;
+font-size: 14px;
+font-size: 0.875rem;
+font-weight: bold;
+height: auto;
+left: 5px;
+line-height: normal;
+padding: 15px 23px 14px;
+text-decoration: none;
+top: 5px;
+width: auto;
+z-index: 100000; /* Above WP toolbar. */
+}
 
 /*preset*/
 
@@ -146,6 +173,12 @@ vertical-align: bottom;
 cursor:default;
 user-select:none;
 }
+.site-logo {
+display: inline-block;
+}
+.site-logo img {
+max-height: 40px;
+}
 .site-description {
 border-left:1px solid rgba(255,255,255,.6);
 margin-left:10px;
@@ -166,6 +199,9 @@ border-width:0 45px 45px 0;
 border-style:solid;
 border-color:transparent #29b6f6 transparent transparent;
 }
+.format-image p {
+margin: 0;
+}
 .lv .format-image .mdl-card__actions {
 position:absolute;
 bottom:0;
@@ -182,9 +218,6 @@ background-size: cover;
 .material-icons.mini {
 font-size:18px;
 vertical-align:text-top;
-}
-.mdl-card__supporting-text p {
-display: inline-block;
 }
 .mdl-card__media {
 background-color:transparent;
@@ -321,7 +354,7 @@ color:#fff;
 position:absolute;
 padding:0 16px;
 margin:0;
-transform:translateX(-110%);
+transform:translateY(-110%);
 text-shadow:1px 1px 6px #444;
 }
 .cat, .edit {

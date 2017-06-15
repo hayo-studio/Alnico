@@ -77,11 +77,11 @@ if(!class_exists('Alnico')) {
 
       $arr['v']['mdl-js'] = 1;
       $arr['v']['jq-js'] = 1;
-      $arr['v']['my-js'] = 7;
+      $arr['v']['my-js'] = 8;
       $arr['v']['ll-js'] = 1;
       $arr['v']['cr-js'] = 1;
       $arr['v']['mdl-css'] = 1;
-      $arr['v']['my-css'] = 5;
+      $arr['v']['my-css'] = 8;
       $arr['v']['icons-css'] = 1;
 
       //paths
@@ -89,17 +89,19 @@ if(!class_exists('Alnico')) {
       $arr['path']['inc'] = $arr['path']['base'].'inc/';
       $arr['path']['css'] = $arr['path']['base'].'assets/css/';
       $arr['path']['js'] = $arr['path']['base'].'assets/js/';
+      $arr['path']['images'] = $arr['path']['base'].'assets/images/';
 
       //urls
       $arr['url']['base'] = get_template_directory_uri().'/';
       $arr['url']['css'] = $arr['url']['base'].'assets/css/';
       $arr['url']['js'] = $arr['url']['base'].'assets/js/';
+      $arr['url']['images'] = $arr['url']['base'].'assets/images/';
 
       //settings
       $arr['install_version'] = get_option($arr['unique'].'_version');
       $arr['settings'] = get_theme_mods();
       $arr['settings'] = $arr['settings'] && is_array($arr['settings']) ? $arr['settings'] : array();
-      $arr['social_fields'] = array(
+      /*$arr['social_fields'] = array(
           array('name'  => 'Facebook',
              'field' => 'facebook',
              'help'  => __('Enter your Facebook profile URL.', 'alnico')),
@@ -127,7 +129,7 @@ if(!class_exists('Alnico')) {
           array('name'  => 'Tumblr',
              'field' => 'tumblr',
              'help'  => __('Enter your Tumblr profile URL.', 'alnico')),
-        );
+        );*/
       self::$_var = $arr;
     }
 

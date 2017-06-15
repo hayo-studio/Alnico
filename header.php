@@ -14,6 +14,14 @@
   <header id="masthead" class="mdl-layout__header mdl-shadow--3dp">
     <div class="mdl-layout__header-row">
       <a class="mdl-layout-title" href="<?php echo esc_url( home_url( '/' ) );?>">
+        <?php
+        $logo = alnico__t('logo');
+        if( !empty($logo) || is_customize_preview() ) {
+          echo '<div class="site-logo">';
+          echo '<img src="'.esc_url($logo).'">';
+          echo '</div>';
+        }
+        ?>
         <span class="site-title mdl-color-text--primary-contrast"><?php bloginfo( 'name' );?></span>
         <span class="lg-only site-description mdl-color-text--primary-contrast"><?php bloginfo( 'description' );?></span>
       </a>

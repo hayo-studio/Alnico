@@ -22,7 +22,7 @@ function alnico_customize_register($wp_customize) {
     'priority' => 35,
     'capability' => 'edit_theme_options',
     'description' => __('Alnico 主题的主要选项。', 'alnico'),
-  ));
+  ) );
     $wp_customize->add_setting( 'mdl_custom_css', array(
     'default' => '',
     'type' => 'theme_mod',
@@ -108,44 +108,28 @@ function alnico_customize_register($wp_customize) {
     'capability' => 'edit_theme_options',
     'description' => __('Allows you to customize Header.', 'alnico'),
   ) );
-  $wp_customize->add_setting( 'header_size', array(
-    'default' => 'big',
-    'type' => 'theme_mod',
-    'transport' => 'postMessage',
-    'sanitize_callback' => 'alnico_sanitize_c_header_size'
-  ) );
-  $wp_customize->add_control( 'header_size', array(
-    'type' => 'select',
-    'priority' => 1,
-    'section' => 'header_options',
-    'label' => __( 'Header Size', 'alnico' ),
-    'choices' => array ('big' => 'Big', 'small' => 'Small'),
-    'input_attrs' => array(
-      'class' => 'my-custom-class-for-js',
-      'style' => 'border: 1px solid #F00'
-    )
-  ) );
   $wp_customize->add_setting('logo', array(
     'default' => Alnico::get('url','images').'logo.png',
     'type' => 'theme_mod',
     'transport' => 'postMessage',
     'sanitize_callback' => 'esc_url_raw'
-  ));
+  ) );
   $wp_customize->add_control(new WP_Customize_Media_Control($wp_customize, 'logo', array(
-    'label' => __('Site Logo', 'alnico'),
+    'label' => __('站点 Logo', 'alnico'),
     'section' => 'header_options',
     'priority' => 3,
     'type' => 'image',
     'mime_type' => 'image',
-  )));
+  ) ) );
+
   /*Footer Section*/
-  $wp_customize->add_section('footer_options', array(
+  /*$wp_customize->add_section('footer_options', array(
     'title' => __('社会媒体', 'alnico'),
     'priority' => 108,
     'capability' => 'edit_theme_options',
     'description' => __('WIP', 'alnico'),
   ));
-  /*
+  
   $socials = Alnico::get('social_fields');
   $i = 1;
   foreach ($socials as $social) {
@@ -154,13 +138,13 @@ function alnico_customize_register($wp_customize) {
       'type' => 'theme_mod',
       'transport' => 'postMessage',
       'sanitize_callback' => 'esc_url_raw'
-    ));
+    ) );
     $wp_customize->add_control( 'social_'.$social['field'], array(
       'type' => 'text',
       'priority' => $i++,
       'section' => 'footer_options',
       'label' => $social['name']
-    ));
+    ) );
   }
   */
 
@@ -249,7 +233,7 @@ function alnico_customize_header_output() {
     echo '<link rel="stylesheet" id="mdl-css" href="'.$mdl_css.'">';
     alnico_print_res( Alnico::get( 'path', 'css' ).'material-icons.css', 'icons-css', 7 );
   }
-  alnico_print_res( Alnico::get( 'path', 'css' ).'common.min.css', 'my-css', 1 );
+  alnico_print_res( Alnico::get( 'path', 'css' ).'common.css', 'my-css', 1 );
 }
 
 function alnico_customize_footer_output() {
@@ -257,7 +241,7 @@ function alnico_customize_footer_output() {
   alnico_print_res( Alnico::get( 'path', 'js' ).'material.min.js', 'mdl-js', 2, 1 );
   alnico_print_res( ABSPATH.'wp-includes/js/jquery/jquery.js', 'jq-js', 3, 1 );
   alnico_print_res( Alnico::get( 'path', 'js' ).'jquery.lazyload.min.js', 'll-js', 4, 1 );
-  alnico_print_res( Alnico::get( 'path', 'js' ).'common.min.js', 'my-js', 5, 1 );
+  alnico_print_res( Alnico::get( 'path', 'js' ).'common.js', 'my-js', 5, 1 );
 
 }
 
