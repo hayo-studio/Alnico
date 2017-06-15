@@ -19,11 +19,11 @@
     } );
 
     api('logo', function (val, t) {
-      val.bind( function( newval ) {
+      val.bind( function siteLogo( newval ) {
         if (newval === '') {
-          $('header .img-logo').hide();
+          $('.site-logo').empty().hide();
         } else {
-          $('header .img-logo').attr('src', newval).show();
+          $('.site-logo').html('<img src='+newval+' />').show();
         }
       } );
     } );
@@ -47,7 +47,7 @@
         this.unbind( api.settingPreviewHandlers.background );
       } );
     } );
-    
+
     api.settingPreviewHandlers.background = function() {
       var css = '', extra = '', settings = {};
       _.each( ['color', 'image', 'preset', 'position_x', 'position_y', 'size', 'repeat', 'attachment'], function( prop ) {
@@ -80,8 +80,6 @@
     } );
     api.when.apply( api, bg ).done( function() {
       $.each( arguments, function() {
-        console.log(api( 'transparent_card' ));
-        console.log(api( 'transparent_card' )());
         this.bind( api.settingPreviewHandlers.background );
       } );
     } );

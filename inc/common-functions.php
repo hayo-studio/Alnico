@@ -225,18 +225,6 @@ function alnico_meta($opt = array('author', 'date', 'category', 'edit'), $echo =
     //$ret .= '<span class="lg-only mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"><i class="material-icons mini">schedule</i> <date>'.get_the_date().'</date></span>';
     $ret .= '<time class="lg-only">'.get_the_date().'</time>';
   }
-  if (in_array('attachment', $opt)) {
-  $metadata = wp_get_attachment_metadata();
-  if ( $metadata ) {
-    $ret .= sprintf( '<span class="attachment-meta full-size-link"><i class="material-icons">zoom_in</i> <a href="%1$s" title="%2$s">%3$s (%4$s &times; %5$s)</a></span>',
-        esc_url( wp_get_attachment_url() ),
-        esc_attr__( 'Link to full-size image', 'alnico' ),
-        __( 'Full resolution', 'alnico' ),
-        $metadata['width'],
-        $metadata['height']
-    );
-  }
-  }
   if (in_array('publised_in', $opt)) {
   global $post;
     $ret .= '<span class="publish-in"><i class="material-icons">publish</i> '.__('发布于', 'alnico').' <a href="'.esc_url(get_permalink( $post->post_parent )).'">'.esc_html(get_the_title($post->post_parent)).'</a></span>';

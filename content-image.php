@@ -9,7 +9,4 @@
       'link_after' => '</span>'
     ) );?>
   </div>
-  <div class="mdl-card__actions mdl-card--border">
-    <?php alnico_meta();?>
-  </div>
 </article>

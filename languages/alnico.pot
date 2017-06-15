@@ -1,0 +1,213 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Alnico\n"
+"POT-Creation-Date: 2017-06-15 22:26+0800\n"
+"PO-Revision-Date: 2017-06-15 22:25+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.10\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:7
+msgid "404"
+msgstr ""
+
+#: 404.php:8
+msgid "这个页面走丢了……"
+msgstr ""
+
+#: archive.php:11
+#, php-format
+msgid "%s的文章："
+msgstr ""
+
+#: card.php:10
+msgid "继续阅读"
+msgstr ""
+
+#: comments.php:17
+msgid "姓名"
+msgstr ""
+
+#: comments.php:18
+msgid "邮箱"
+msgstr ""
+
+#: comments.php:19
+msgid "网站"
+msgstr ""
+
+#: comments.php:21
+msgid "写下你的评论"
+msgstr ""
+
+#: comments.php:38
+msgid "评论"
+msgid_plural "评论"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:53
+msgid "之前的评论"
+msgstr ""
+
+#: comments.php:57
+msgid "之后的评论"
+msgstr ""
+
+#: content-audio.php:13 content-gallery.php:29 content-image.php:6
+#: content-quote.php:8 content-video.php:11 content.php:10
+msgid "页数："
+msgstr ""
+
+#: header.php:30
+msgctxt "aria-label"
+msgid "搜索"
+msgstr ""
+
+#: header.php:50
+msgid "主页"
+msgstr ""
+
+#: inc/common-functions.php:134
+msgid "Pingback: "
+msgstr ""
+
+#: inc/common-functions.php:230
+msgid "发布于"
+msgstr ""
+
+#: inc/common-functions.php:235
+msgid "编辑"
+msgstr ""
+
+#: inc/common-functions.php:339
+msgid "回到主页"
+msgstr ""
+
+#: inc/common-functions.php:351
+msgid "取消赞"
+msgstr ""
+
+#: inc/common-functions.php:351
+msgid "赞"
+msgstr ""
+
+#: inc/common-functions.php:355
+msgid "分享"
+msgstr ""
+
+#: inc/common-functions.php:405
+#, php-format
+msgid "分享到%s"
+msgstr ""
+
+#: inc/customizer.php:21
+msgid "首选项"
+msgstr ""
+
+#: inc/customizer.php:24
+msgid "Alnico 主题的主要选项。"
+msgstr ""
+
+#: inc/customizer.php:37
+#, php-format
+msgid ""
+"访问 <a href=\"%s\" target=\"_blank\">MDL Customize</a> 尝试不同配色。（你也"
+"可以使用 <a href=\"%s\" target=\"_blank\">BootCDN</a>）"
+msgstr ""
+
+#: inc/customizer.php:48
+msgid "主色"
+msgstr ""
+
+#: inc/customizer.php:49
+msgid "Chrome 移动版顶部颜色。定义在<code>material.min.css</code>中。"
+msgstr ""
+
+#: inc/customizer.php:62
+msgid "主区域宽度"
+msgstr ""
+
+#: inc/customizer.php:63
+msgid "请在数值后加 px 或 %"
+msgstr ""
+
+#: inc/customizer.php:78
+msgid "背景颜色"
+msgstr ""
+
+#: inc/customizer.php:88
+msgid "部分页面卡片透明"
+msgstr ""
+
+#: inc/customizer.php:106
+msgid "导航栏"
+msgstr ""
+
+#: inc/customizer.php:109
+msgid "Allows you to customize Header."
+msgstr ""
+
+#: inc/customizer.php:118
+msgid "站点 Logo"
+msgstr ""
+
+#: inc/front.php:37
+msgid "这是一篇受密码保护的文章，您需要提供访问密码："
+msgstr ""
+
+#: inc/front.php:38
+msgid "密码："
+msgstr ""
+
+#: inc/theme.php:43
+msgid "页眉链接"
+msgstr ""
+
+#: inc/theme.php:44
+msgid "页脚链接"
+msgstr ""
+
+#: search.php:3
+#, php-format
+msgid "“%s”的搜索结果："
+msgstr ""
+
+#: search.php:19
+msgid "没有找到搜索结果"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Alnico"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://blog.hayo-studio.cn/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Alnico is an eloquent material design style wordpress theme based on "
+"material design lite."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Snownee"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.hayo-studio.cn/"
+msgstr ""
