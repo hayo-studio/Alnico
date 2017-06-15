@@ -1,0 +1,89 @@
+.aligncenter {
+display: block;
+margin: auto;
+}
+.alignleft {
+display: block;
+margin-right: auto;
+}
+.alignright {
+display: block;
+margin-left: auto;
+}
+#tinymce {
+font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+#tinymce a {
+text-decoration:none;
+padding: 2px;
+}
+#tinymce code,
+#tinymce kbd,
+#tinymce samp {
+font-family: Consolas, monospace, serif;
+white-space: nowrap;
+padding: 0 4px;
+margin: 0 4px;
+border: 1px solid #ddd;
+border-radius: 3px;
+}
+#tinymce kbd {
+background-color: #f3f6f7;
+border: #ccc;
+box-shadow: 0 1px 1px rgba(0,0,0,.2), 0 2px 0 0 rgba(255,255,255,.7) inset;
+padding: 2px 4px;
+}
+#tinymce small {
+font-size: smaller !important;
+}
+#tinymce pre {
+padding: 10px;
+margin: 15px 0;
+font: 14px / 18px Consolas, monospace, serif;
+-moz-tab-size: 4;
+tab-size: 4;
+overflow: auto;
+border: 1px solid #ddd;
+border-radius: 3px;
+}
+#tinymce abbr {
+border-bottom: dotted 1px;
+text-decoration: none;
+}
+#tinymce blockquote,
+#tinymce details {
+font-style: normal;
+border-left: 5px solid #ccc;
+background: rgba(0,0,0,.05);
+margin: 24px 0;
+padding: 5px 24px;
+color: #777;
+font-size: 14px;
+}
+#tinymce blockquote {
+border-left: 5px solid #ccc;
+margin: 24px 0;
+}
+#tinymce blockquote blockquote {
+margin: 12px 0;
+}
+#tinymce h1 {
+font-size: 28px;
+margin: 24px 0 16px;
+line-height: 32px;
+}
+#tinymce h2 {
+font-size: 24px;
+margin: 24px 0 16px;
+line-height: 28px;
+}
+#tinymce h3 {
+font-size: 20px;
+margin: 16px 0;
+line-height: 24px;
+}
+#tinymce h4 {
+font-size: 18px;
+margin: 12px 0;
+line-height: 20px;
+}
