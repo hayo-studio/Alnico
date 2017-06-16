@@ -53,6 +53,7 @@
         'echo' => 0,
         'separator' => '',
         'style' => '',
+        'depth' => 1,
         'hide_empty' => 1,
         'order' => 'DESC',
         'orderby' => 'ID'
