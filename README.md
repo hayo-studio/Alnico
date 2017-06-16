@@ -30,6 +30,7 @@ Alnico is an eloquent material design style WordPress theme based on material de
    * ...
 
 ## Future Plans
+ * Author biocard
  * Entirely PJAX
  * Gallery Page
  * Infinite Scroll
@@ -41,6 +42,7 @@ Alnico is an eloquent material design style WordPress theme based on material de
  4. Enjoy it!
 
 ## Important
+
 Do not use static pages because pages are generated dynamically.
 
 ## Donate Us
@@ -54,9 +56,11 @@ Your money will be used to:
 My [PayPal](paypal.me/Snownee)
 
 My Wechat
+
 ![二维码](assets/images/wechat.png)
 
 My Alipay
+
 ![二维码](assets/images/alipay.png)
 
 Please note "Alnico" if you donate us.
