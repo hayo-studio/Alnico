@@ -46,7 +46,6 @@ height: 1px;
 width: 1px;
 overflow: hidden;
 }
-
 .screen-reader-text:focus {
 background-color: #f1f1f1;
 border-radius: 3px;
@@ -422,6 +421,34 @@ display: inline-block;
 background: #fff;
 margin-right: 10px;
 }
+.bio {
+flex-direction: row;
+}
+.bio>.border {
+border-radius: 50%;
+border: #ddd 5px solid;
+margin: 10px 20px;
+}
+.bio:hover .avatar {
+transform: rotate(360deg);
+transition: .5s;
+}
+.author-info {
+margin: 10px;
+}
+.author-info>* {
+opacity: 0;
+margin: 10px;
+border-radius: 5px;
+padding: 5px;
+display: table;
+animation: scrollin .8s both;
+}
+.author-info>span { animation-delay: .4s; }
+.author-info>small { animation-delay: .9s; }
+
+/* hack */
+
 #uc_recommend_ad{display: none !important}
 
 /*expand*/
@@ -456,6 +483,16 @@ padding:20px 5%;
 
 /*animation*/
 
+@keyframes scrollin {
+  from {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 .fadeout {
 animation: pulse .5s cubic-bezier(0, 0, 0.2, 1) reverse both;
 }
