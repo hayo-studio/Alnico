@@ -254,7 +254,7 @@ function alnico_customize_header_output() {
     echo '<link rel="stylesheet" id="mdl-css" href="'.$mdl_css.'">';
     alnico_print_res( Alnico::get( 'path', 'css' ).'material-icons.css', 'icons-css', 7 );
   }
-  alnico_print_res( Alnico::get( 'path', 'css' ).'common.css', 'my-css', 1 );
+  alnico_print_res( Alnico::get( 'path', 'css' ).'common.min.css', 'my-css', 1 );
 }
 
 function alnico_customize_footer_output() {
@@ -262,7 +262,7 @@ function alnico_customize_footer_output() {
   alnico_print_res( Alnico::get( 'path', 'js' ).'material.min.js', 'mdl-js', 2, 1 );
   alnico_print_res( ABSPATH.'wp-includes/js/jquery/jquery.js', 'jq-js', 3, 1 );
   alnico_print_res( Alnico::get( 'path', 'js' ).'jquery.lazyload.min.js', 'll-js', 4, 1 );
-  alnico_print_res( Alnico::get( 'path', 'js' ).'common.js', 'my-js', 5, 1 );
+  alnico_print_res( Alnico::get( 'path', 'js' ).'common.min.js', 'my-js', 5, 1 );
 
 }
 
