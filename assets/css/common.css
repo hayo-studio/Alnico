@@ -172,6 +172,9 @@ vertical-align: bottom;
 cursor:default;
 user-select:none;
 }
+.mdl-layout__header-row {
+overflow-x: hidden;
+}
 .site-logo {
 display: inline-block;
 }
@@ -445,6 +448,9 @@ animation: scrollin .8s both;
 }
 .author-info>span { animation-delay: .4s; }
 .author-info>small { animation-delay: .9s; }
+#footer-links {
+flex-wrap: wrap;
+}
 
 /* hack */
 
