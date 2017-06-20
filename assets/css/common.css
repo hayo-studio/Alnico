@@ -182,7 +182,7 @@ display: inline-block;
 max-height: 40px;
 }
 .site-description {
-border-left:1px solid rgba(255,255,255,.6);
+border-left:1px solid currentColor;
 margin-left:10px;
 padding-left:16px;
 }
@@ -340,6 +340,9 @@ cursor: default;
 .post-nav .mdl-tooltip {
 max-width:40%;
 }
+#prev-post, #next-post {
+width: 32px;
+}
 .thumb {
 min-width:752px;
 position:relative;
@@ -450,6 +453,9 @@ animation: scrollin .8s both;
 .author-info>small { animation-delay: .9s; }
 #footer-links {
 flex-wrap: wrap;
+}
+.mdl-mini-footer__right-section li {
+line-height: 36px;
 }
 
 /* hack */

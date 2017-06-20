@@ -34,6 +34,7 @@
           <input class="mdl-textfield__input" type="text" id="header-search">
         </div>
       </div>
+      <?php if ( has_nav_menu( 'header' ) ):?>
       <label id="header-nav" class="mdl-button mdl-js-button mdl-button--icon mdl-layout--small-screen-only" role="none">
         <i class="material-icons">more_vert</i>
       </label>
@@ -41,7 +42,10 @@
       $menu = alnico_nav_menu('header', 'mdl-menu', 'mdl-menu__item', false);
       echo alnico_str_replace('class="mdl-menu"', 'class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="header-nav"', $menu, 1);
       ?>
-      <?php alnico_nav_menu('header', 'mdl-navigation mdl-layout--large-screen-only', 'mdl-navigation__link');?>
+      <?php
+      alnico_nav_menu('header', 'mdl-navigation mdl-layout--large-screen-only', 'mdl-navigation__link');
+      endif;
+      ?>
     </div>
   </header>
   <aside class="mdl-layout__drawer">

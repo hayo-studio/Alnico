@@ -327,17 +327,19 @@ function alnico_post_nav($page_actions = true, $main_actions = true, $ajax = fal
       '%link',
       '<i class="material-icons">&#xE5CB;</i><div class="mdl-tooltip" for="next-post">%title</div>'
     );
-    echo str_replace( '<a ', '<a id="next-post" class="mdl-button mdl-js-button mdl-button--icon mdl-color--grey-100" ', $link );
+    if ( $link ) {
+      echo str_replace( '<a ', '<a id="next-post" class="mdl-button mdl-js-button mdl-button--icon mdl-color--grey-100" ', $link );
+    } else {
+      echo "<a id='next-post'></a>";
+    }
   }
   ?>
   <div class="mdl-layout-spacer"></div>
   <?php if ( $page_actions ):?>
-    <button id="back" class="mdl-button mdl-js-button mdl-button--icon mdl-color--grey-100">
-      <a href="<?php echo $ajax ? 'javascript:history.go(-1);' : esc_url(home_url( '/' ));?>">
-        <i class="material-icons">home</i>
-        <div class="mdl-tooltip" for="back"><?php _e('回到主页', 'alnico');?></div>
-      </a>
-    </button>
+    <a id="back" class="mdl-button mdl-js-button mdl-button--icon mdl-color--grey-100" href="<?php echo $ajax ? 'javascript:history.go(-1);' : esc_url(home_url( '/' ));?>">
+      <i class="material-icons">home</i>
+      <div class="mdl-tooltip" for="back"><?php _e('回到主页', 'alnico');?></div>
+    </a>
     <?php
     $like_num = alnico_get_like( get_the_ID() );
     $is_liked = isset( $_COOKIE['liked'] ) ? $_COOKIE['liked'] : '';
@@ -349,10 +351,10 @@ function alnico_post_nav($page_actions = true, $main_actions = true, $ajax = fal
       <div id="like-num"><?php if ( $like_num != 0 ) echo $like_num;?></div>
       <div class="mdl-tooltip" for="like"><?php echo $is_liked ? __('取消赞', 'alnico') : __('赞', 'alnico');?></div>
     </button>
-    <button id="share" class="mdl-button mdl-js-button mdl-button--icon mdl-color--grey-100">
+    <a id="share" class="mdl-button mdl-js-button mdl-button--icon mdl-color--grey-100">
       <i class="material-icons">share</i>
       <div class="mdl-tooltip" for="share"><?php _e('分享', 'alnico');?></div>
-    </button>
+    </a>
     <?php alnico_share();?>
   <?php endif;?>
   <div class="mdl-layout-spacer"></div>
@@ -362,7 +364,11 @@ function alnico_post_nav($page_actions = true, $main_actions = true, $ajax = fal
       '%link',
       '<i class="material-icons">&#xE5CC;</i><div class="mdl-tooltip" for="prev-post">%title</div>'
     );
-    echo str_replace( '<a ', '<a id="prev-post" class="mdl-button mdl-js-button mdl-button--icon mdl-color--grey-100" ', $link );
+    if ( $link ) {
+      echo str_replace( '<a ', '<a id="prev-post" class="mdl-button mdl-js-button mdl-button--icon mdl-color--grey-100" ', $link );
+    } else {
+      echo "<a id='prev-post'></a>";
+    }
   };
   ?>
   </nav>

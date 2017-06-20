@@ -60,7 +60,7 @@ if(!class_exists('Alnico')) {
         set_theme_mod('site_width', '768px');
         set_theme_mod('primary_color', '607d8b');
         set_theme_mod('header_size', 'small');
-        update_option(self::get('unique').'_version', $v1);
+        update_option('alnico_version', $v1);
       }
       if ( version_compare( $v1, $v2 ) > 0 ) {
         //do upgrade
@@ -71,9 +71,8 @@ if(!class_exists('Alnico')) {
       $arr = array();
 
       //versions
-      $arr['version'] = '1.0.6';
-      $arr['verid'] = 4;
-      $arr['unique'] = 'alnico';
+      $arr['version'] = '1.0.8';
+      $arr['verid'] = 5;
 
       $arr['v']['mdl-js'] = 1;
       $arr['v']['jq-js'] = 1;
@@ -81,7 +80,7 @@ if(!class_exists('Alnico')) {
       $arr['v']['ll-js'] = 1;
       $arr['v']['cr-js'] = 1;
       $arr['v']['mdl-css'] = 1;
-      $arr['v']['my-css'] = 11;
+      $arr['v']['my-css'] = 13;
       $arr['v']['icons-css'] = 1;
 
       //paths
@@ -98,7 +97,7 @@ if(!class_exists('Alnico')) {
       $arr['url']['images'] = $arr['url']['base'].'assets/images/';
 
       //settings
-      $arr['install_version'] = get_option($arr['unique'].'_version');
+      $arr['install_version'] = get_option('alnico_version');
       $arr['settings'] = get_theme_mods();
       $arr['settings'] = $arr['settings'] && is_array($arr['settings']) ? $arr['settings'] : array();
       /*$arr['social_fields'] = array(

@@ -127,7 +127,7 @@ function alnico_customize_register($wp_customize) {
     'title' => __('导航栏', 'alnico'),
     'priority' => 107,
     'capability' => 'edit_theme_options',
-    'description' => __('Allows you to customize Header.', 'alnico'),
+    'description' => __('提供自定义导航栏的选项。', 'alnico'),
   ) );
   $wp_customize->add_setting('logo', array(
     'default' => Alnico::get('url','images').'logo.png',
@@ -254,7 +254,7 @@ function alnico_customize_header_output() {
     echo '<link rel="stylesheet" id="mdl-css" href="'.$mdl_css.'">';
     alnico_print_res( Alnico::get( 'path', 'css' ).'material-icons.css', 'icons-css', 7 );
   }
-  alnico_print_res( Alnico::get( 'path', 'css' ).'common.min.css', 'my-css', 1 );
+  alnico_print_res( Alnico::get( 'path', 'css' ).'common.css', 'my-css', 1 );
 }
 
 function alnico_customize_footer_output() {
