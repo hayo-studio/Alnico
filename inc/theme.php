@@ -71,17 +71,17 @@ if(!class_exists('Alnico')) {
       $arr = array();
 
       //versions
-      $arr['version'] = '1.0.0';
-      $arr['verid'] = 1;
+      $arr['version'] = '1.0.4';
+      $arr['verid'] = 3;
       $arr['unique'] = 'alnico';
 
       $arr['v']['mdl-js'] = 1;
       $arr['v']['jq-js'] = 1;
-      $arr['v']['my-js'] = 9;
+      $arr['v']['my-js'] = 10;
       $arr['v']['ll-js'] = 1;
       $arr['v']['cr-js'] = 1;
       $arr['v']['mdl-css'] = 1;
-      $arr['v']['my-css'] = 9;
+      $arr['v']['my-css'] = 10;
       $arr['v']['icons-css'] = 1;
 
       //paths

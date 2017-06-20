@@ -290,7 +290,7 @@ function alnico_page_nav() {
   $format  = $wp_rewrite->using_index_permalinks() && ! strpos( $base, 'index.php' ) ? 'index.php/' : '';
   $format .= $wp_rewrite->using_permalinks() ? user_trailingslashit( $wp_rewrite->pagination_base . '/%#%', 'paged' ) : '?paged=%#%';
 
-  echo "<nav id='page-nav' class='post-nav' role='navigation'><button class='mdl-button mdl-js-button mdl-button--icon mdl-color--grey-100'>";
+  echo "<nav id='page-nav' class='post-nav' role='navigation'><a class='mdl-button mdl-js-button mdl-button--icon mdl-color--grey-100'";
 
   if ( $current && 1 < $current ) {
       $link = str_replace( '%_%', 2 == $current ? '' : $format, $base );
@@ -302,37 +302,36 @@ function alnico_page_nav() {
        *
        * @param string $link The paginated link URL.
        */
-      echo "<a href='" . esc_url( apply_filters( 'paginate_links', $link ) ) . "'><i class='material-icons'>&#xE5CB;</i></a>";
-  }?>
-  </button>
-  <div class='mdl-layout-spacer text-center'><?php echo $current;?></div>
-  <button class='mdl-button mdl-js-button mdl-button--icon mdl-color--grey-100'>
-  <?php
+      echo " href='" . esc_url( apply_filters( 'paginate_links', $link ) ) . "'><i class='material-icons'>&#xE5CB;</i";
+  }
+
+  echo "></a>";
+  echo "<div class='mdl-layout-spacer text-center'>" . $current . "</div>";
+  echo "<a class='mdl-button mdl-js-button mdl-button--icon mdl-color--grey-100'";
+
   if ( $current && $current < $wp_query->max_num_pages ) {
       $link = str_replace( '%_%', $format, $base );
       $link = str_replace( '%#%', $current + 1, $link );
       /** This filter is documented in wp-includes/general-template.php */
-      echo "<a href='" . esc_url( apply_filters( 'paginate_links', $link ) ) . "'><i class='material-icons'>&#xE5CC;</i></a>";
+      echo " href='" . esc_url( apply_filters( 'paginate_links', $link ) ) . "'><i class='material-icons'>&#xE5CC;</i";
   }
-  echo "</button></nav>";
-
+  echo "></a></nav>";
 }
 
 function alnico_post_nav($page_actions = true, $main_actions = true, $ajax = false) {
 ?>
   <nav id="post-nav" class='post-nav'>
-  <?php if ( $page_actions ):?>
-    <button id="next-post" class="mdl-button mdl-js-button mdl-button--icon mdl-color--grey-100">
-    <?php
-    next_post_link (
+  <?php
+  if ( $page_actions ) {
+    $link = get_next_post_link (
       '%link',
       '<i class="material-icons">&#xE5CB;</i><div class="mdl-tooltip" for="next-post">%title</div>'
     );
-    ?>
-    </button>
-  <?php endif;?>
+    echo str_replace( '<a ', '<a id="next-post" class="mdl-button mdl-js-button mdl-button--icon mdl-color--grey-100" ', $link );
+  }
+  ?>
   <div class="mdl-layout-spacer"></div>
-  <?php if ($page_actions):?>
+  <?php if ( $page_actions ):?>
     <button id="back" class="mdl-button mdl-js-button mdl-button--icon mdl-color--grey-100">
       <a href="<?php echo $ajax ? 'javascript:history.go(-1);' : esc_url(home_url( '/' ));?>">
         <i class="material-icons">home</i>
@@ -357,14 +356,15 @@ function alnico_post_nav($page_actions = true, $main_actions = true, $ajax = fal
     <?php alnico_share();?>
   <?php endif;?>
   <div class="mdl-layout-spacer"></div>
-  <?php if ($page_actions):?>
-    <button id="prev-post" class="mdl-button mdl-js-button mdl-button--icon mdl-color--grey-100"><?php
-    previous_post_link (
+  <?php
+  if ($page_actions) {
+    $link = get_previous_post_link (
       '%link',
       '<i class="material-icons">&#xE5CC;</i><div class="mdl-tooltip" for="prev-post">%title</div>'
     );
-    ?></button>
-  <?php endif;?>
+    echo str_replace( '<a ', '<a id="prev-post" class="mdl-button mdl-js-button mdl-button--icon mdl-color--grey-100" ', $link );
+  };
+  ?>
   </nav>
 <?php
 }

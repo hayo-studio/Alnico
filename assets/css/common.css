@@ -327,13 +327,12 @@ margin:15px 0;
 align-items:center;
 }
 .post-nav a {
+display: block;
 color:#616161;
-}
-.post-nav button:empty {
-opacity: 0 !important;
-}
-.post-nav button {
 margin:0 3px;
+}
+.post-nav a:empty {
+cursor: default;
 }
 .post-nav .mdl-tooltip {
 max-width:40%;
