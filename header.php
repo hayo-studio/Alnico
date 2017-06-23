@@ -51,7 +51,7 @@
   <aside class="mdl-layout__drawer">
     <span class="mdl-layout-title"><?php bloginfo( 'name' );?></span>
     <nav class="mdl-navigation" role="navigation">
-      <a class="mdl-navigation__link" href><?php _e('主页', 'alnico')?></a>
+      <!--<a class="mdl-navigation__link" href=""><?php _e('主页', 'alnico')?></a>-->
       <?php
       $cats = wp_list_categories( array(
         'echo' => 0,

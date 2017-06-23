@@ -9,7 +9,6 @@ Alnico is an eloquent material design style WordPress theme based on material de
  * Tags: one-column, fixed-layout, fluid-layout, custom-colors, flexible-header, sticky-post, editor-style, threaded-comments
  * Requires at least: WordPress 4.7
  * Tested up to: WordPress 4.8
- * Version: 1.0.8
  * License: [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) © Snownee
 
 ## Features
@@ -31,7 +30,7 @@ Alnico is an eloquent material design style WordPress theme based on material de
 
 ## Future Plans
  * Author biocard
- * Entirely PJAX
+ * Entire PJAX
  * Gallery Page
  * Infinite Scroll
 
@@ -50,7 +49,7 @@ Do not use static pages because pages are generated dynamically.
 Developing a theme is not an easy thing. You can support us by donating us 3 dollors or more. :)
 
 Your money will be used to:
- * Treat me to a hot pot (See [What is hot pot](https://en.wikipedia.org/wiki/Hot_pot))
+ * Treat me to a spicy hot pot (See [What is hot pot](https://en.wikipedia.org/wiki/Hot_pot))
  * Help us keep theming
 
 My [PayPal](paypal.me/Snownee)

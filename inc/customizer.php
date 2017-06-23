@@ -254,7 +254,7 @@ function alnico_customize_header_output() {
     echo '<link rel="stylesheet" id="mdl-css" href="'.$mdl_css.'">';
     alnico_print_res( Alnico::get( 'path', 'css' ).'material-icons.css', 'icons-css', 7 );
   }
-  alnico_print_res( Alnico::get( 'path', 'css' ).'common.css', 'my-css', 1 );
+  alnico_print_res( Alnico::get( 'path', 'css' ).'common.min.css', 'my-css', 1 );
 }
 
 function alnico_customize_footer_output() {
