@@ -49,7 +49,7 @@ if(!class_exists('Alnico')) {
 
       add_image_size( 'card-thumb', 752, 216, true );
 
-      add_action ('after_switch_theme', array( &$this, 'theme_activation') );
+      add_action('after_switch_theme', array( &$this, 'theme_activation') );
       add_editor_style( array( 'assets/css/editor-style.css' ) );
     }
     function theme_activation () {
@@ -71,8 +71,8 @@ if(!class_exists('Alnico')) {
       $arr = array();
 
       //versions
-      $arr['version'] = '1.0.10';
-      $arr['verid'] = 6;
+      $arr['version'] = '1.0.12';
+      $arr['verid'] = 7;
 
       $arr['v']['mdl-js'] = 1;
       $arr['v']['jq-js'] = 1;
@@ -80,7 +80,7 @@ if(!class_exists('Alnico')) {
       $arr['v']['ll-js'] = 1;
       $arr['v']['cr-js'] = 1;
       $arr['v']['mdl-css'] = 1;
-      $arr['v']['my-css'] = 14;
+      $arr['v']['my-css'] = 15;
       $arr['v']['icons-css'] = 1;
 
       //paths

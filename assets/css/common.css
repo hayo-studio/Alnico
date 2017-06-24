@@ -456,6 +456,14 @@ flex-wrap: wrap;
 .mdl-mini-footer__right-section li {
 line-height: 36px;
 }
+.last-modified {
+padding: 12px 18px;
+margin-bottom: 5px;
+background: #ffefb2;
+color: #888;
+font-size: smaller;
+border-radius: 3px;
+}
 
 /* hack */
 

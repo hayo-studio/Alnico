@@ -250,7 +250,7 @@ function alnico_tags($echo = 1) {
   return $ret;
 }
 
-function alnico__t ($option, $echo = false) {
+function alnico__t($option, $echo = false) {
   if ($echo) {
     echo Alnico::get( 'settings', $option );
   } else {
@@ -713,3 +713,9 @@ function alnico_str_replace($search, $replace, $content, $limit = -1) {
 }
 
 add_filter( 'pre_option_link_manager_enabled', '__return_true' );
+
+function shortcode_last_modified($atts, $content) {
+$d = __('Y年n月j日', 'alnico');
+return "<div class='last-modified'>本文最后修改于" . apply_filters( 'the_modified_time', get_the_modified_time($d), $d ) . "</div>";
+}
+add_shortcode('last-modified', 'shortcode_last_modified');
