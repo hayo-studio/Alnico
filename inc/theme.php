@@ -80,7 +80,7 @@ if(!class_exists('Alnico')) {
       $arr['v']['ll-js'] = 1;
       $arr['v']['cr-js'] = 1;
       $arr['v']['mdl-css'] = 1;
-      $arr['v']['my-css'] = 15;
+      $arr['v']['my-css'] = 16;
       $arr['v']['icons-css'] = 1;
 
       //paths
