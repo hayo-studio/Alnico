@@ -71,8 +71,8 @@ if(!class_exists('Alnico')) {
       $arr = array();
 
       //versions
-      $arr['version'] = '1.0.12';
-      $arr['verid'] = 7;
+      $arr['version'] = '1.0.14';
+      $arr['verid'] = 8;
 
       $arr['v']['mdl-js'] = 1;
       $arr['v']['jq-js'] = 1;

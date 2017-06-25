@@ -186,6 +186,9 @@ border-left:1px solid currentColor;
 margin-left:10px;
 padding-left:16px;
 }
+.mdl-layout-title>span {
+vertical-align: middle;
+}
 .sticky-icon {
 position:absolute;
 right:0;

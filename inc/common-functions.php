@@ -518,6 +518,11 @@ function alnico_ajax_post() {
     $content = apply_filters( 'the_content', $post->post_content );
     $content = str_replace( ']]>', ']]&gt;', $content );
 
+    // compat pure-highlight-js
+    if ( defined( 'PURE_HIGHLIGHTJS_PLUGIN_DIR' ) ) {
+      $content .= "<script>jQuery('.pure-highlightjs>code').each(function() {hljs.highlightBlock(this);})</script>";
+    }
+
     ob_start();
     comments_template();
     $comments = ob_get_clean();
