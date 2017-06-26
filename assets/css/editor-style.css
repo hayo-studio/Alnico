@@ -17,7 +17,7 @@ font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 text-decoration:none;
 padding: 2px;
 }
-#tinymce code,
+#tinymce *:not(pre)>code,
 #tinymce kbd,
 #tinymce samp {
 font-family: Consolas, monospace, serif;
@@ -25,6 +25,9 @@ padding: 0 4px;
 margin: 0 4px;
 border: 1px solid #ddd;
 border-radius: 3px;
+}
+#tinymce code {
+font-family: Consolas, monospace, serif;
 }
 #tinymce kbd {
 background-color: #f3f6f7;
@@ -36,9 +39,7 @@ padding: 2px 4px;
 font-size: smaller !important;
 }
 #tinymce pre {
-padding: 10px;
 margin: 15px 0;
-font: 14px / 18px Consolas, monospace, serif;
 -moz-tab-size: 4;
 tab-size: 4;
 overflow: auto;

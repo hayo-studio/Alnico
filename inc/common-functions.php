@@ -520,7 +520,7 @@ function alnico_ajax_post() {
 
     // compat pure-highlight-js
     if ( defined( 'PURE_HIGHLIGHTJS_PLUGIN_DIR' ) ) {
-      $content .= "<script>jQuery('.pure-highlightjs>code').each(function() {hljs.highlightBlock(this);})</script>";
+      $content .= "<script>jQuery('pre>code').each(function() {hljs.highlightBlock(this);})</script>";
     }
 
     ob_start();

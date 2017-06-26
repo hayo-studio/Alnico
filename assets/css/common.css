@@ -74,12 +74,24 @@ text-decoration:none;
 .mdl-card__content a {
 padding: 2px;
 }
-code, kbd, samp {
+*:not(pre)>code, kbd, samp {
 font-family: Consolas, monospace, serif;
 padding: 0 4px;
 margin: 0 4px;
 border: 1px solid #ddd;
 border-radius: 3px;
+}
+code {
+font-family: Consolas, monospace, serif;
+position: relative;
+}
+code:before {
+content: attr(data-lang);
+position: absolute;
+right: 15px;
+opacity: 0.3;
+text-transform: uppercase;
+font-size: 32px;
 }
 kbd {
 background-color: #f3f6f7;
@@ -91,9 +103,7 @@ small {
 font-size: smaller !important;
 }
 pre {
-padding: 10px;
 margin: 15px 0;
-font: 14px / 18px Consolas, monospace, serif;
 -moz-tab-size: 4;
 tab-size: 4;
 overflow: auto;
