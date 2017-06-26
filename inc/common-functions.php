@@ -200,9 +200,7 @@ function alnico_list_comments($comment, $args, $depth) {
 function alnico_thumb() {
   if ( has_post_thumbnail() && !post_password_required() && !is_attachment() ) :?>
     <div class="mdl-card__media">
-      <div class="thumb">
-        <?php the_post_thumbnail( 'card-thumb' );?>
-      </div>
+      <div class="thumb lazy" data-original="<?php the_post_thumbnail_url( null, 'card-thumb' );?>"></div>
       <div class="mdl-card__title">
         <h1 class="mdl-card__title-text t">
           <?php the_title();?>

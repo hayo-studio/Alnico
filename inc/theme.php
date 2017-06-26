@@ -47,7 +47,7 @@ if(!class_exists('Alnico')) {
       add_theme_support( 'custom-background', array( 'wp-head-callback' => 'alnico_custom_background' ));
       add_theme_support( 'admin-bar', array( 'callback' => 'alnico_admin_bar' ) );
 
-      add_image_size( 'card-thumb', 752, 216, true );
+      add_image_size( 'card-thumb', 752, 216 );
 
       add_action('after_switch_theme', array( &$this, 'theme_activation') );
       add_editor_style( array( 'assets/css/editor-style.css' ) );
@@ -71,8 +71,8 @@ if(!class_exists('Alnico')) {
       $arr = array();
 
       //versions
-      $arr['version'] = '1.0.18';
-      $arr['verid'] = 10;
+      $arr['version'] = '1.0.20';
+      $arr['verid'] = 11;
 
       $arr['v']['mdl-js'] = 1;
       $arr['v']['jq-js'] = 1;
@@ -80,7 +80,7 @@ if(!class_exists('Alnico')) {
       $arr['v']['ll-js'] = 1;
       $arr['v']['cr-js'] = 1;
       $arr['v']['mdl-css'] = 1;
-      $arr['v']['my-css'] = 18;
+      $arr['v']['my-css'] = 19;
       $arr['v']['icons-css'] = 1;
 
       //paths

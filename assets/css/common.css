@@ -355,14 +355,9 @@ max-width:40%;
 width: 32px;
 }
 .thumb {
-min-width:752px;
-position:relative;
-left:50%;
-transform:translateX(-50%);
-}
-.thumb img {
-max-height:216px;
-min-width:752px;
+height: 216px;
+background: no-repeat center;
+background-size: cover;
 }
 .thumb+.mdl-card__title {
 color:#fff;

@@ -5,9 +5,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="<?php alnico__t('meta_description', true);?>">
   <meta name="keywords" content="<?php alnico__t('meta_keywords', true);?>">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
   <?php wp_head();?>
+  <?php
+  $logo = alnico__t('logo');
+  if ($logo) :
+  ?>
+  <link rel="shortcut icon" href="<?php echo esc_url( $logo );?>" />
+  <?php else :?>
   <link rel="shortcut icon" href="<?php echo esc_url( home_url( '/favicon.png' ) );?>" />
+  <?php endif;?>
 </head>
 <body <?php body_class('mdl-color--grey-100 mdl-color-text--grey-700 mdl-base')?>>
 <div id="page" class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -15,7 +22,6 @@
     <div class="mdl-layout__header-row">
       <a class="mdl-layout-title" href="<?php echo esc_url( home_url( '/' ) );?>">
         <?php
-        $logo = alnico__t('logo');
         if( !empty($logo) || is_customize_preview() ) {
           echo '<div class="site-logo">';
           echo '<img src="'.esc_url($logo).'">';
