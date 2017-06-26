@@ -76,7 +76,6 @@ padding: 2px;
 }
 code, kbd, samp {
 font-family: Consolas, monospace, serif;
-white-space: nowrap;
 padding: 0 4px;
 margin: 0 4px;
 border: 1px solid #ddd;
@@ -466,6 +465,7 @@ background: #ffefb2;
 color: #888;
 font-size: smaller;
 border-radius: 3px;
+line-height: normal;
 }
 
 /* hack */

@@ -21,7 +21,6 @@ padding: 2px;
 #tinymce kbd,
 #tinymce samp {
 font-family: Consolas, monospace, serif;
-white-space: nowrap;
 padding: 0 4px;
 margin: 0 4px;
 border: 1px solid #ddd;
