@@ -22,6 +22,9 @@ Alnico is an eloquent material design style WordPress theme based on material de
  * Like Button
  * Share Button
  * Immersive Admin-Bar
+ * Code Highlighting
+ * Author biocard
+ * A [last-modified] Shortcode
  * Many performance optimizations
    * LocalStorage
    * Images Lazyload
@@ -29,7 +32,6 @@ Alnico is an eloquent material design style WordPress theme based on material de
    * ...
 
 ## Future Plans
- * Author biocard
  * Entire PJAX
  * Gallery Page
  * Infinite Scroll
@@ -43,6 +45,10 @@ Alnico is an eloquent material design style WordPress theme based on material de
 ## Important
 
 Do not use static pages because pages are generated dynamically.
+
+## Related Plugin
+
+[Code Highlighting - Alnico-Highlight](https://github.com/hayo-studio/Alnico-Highlight)
 
 ## Donate Us
 
